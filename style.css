@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: "Open Sans", sans-serif;
+    background: linear-gradient(45deg, rgb(0, 0, 70),rgb(100, 1, 1));
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+ul{
+    list-style: none;
+    margin:0;
+    padding: 0;
+}
+
+.all-content{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    border:2px solid brown;
+    background-color: #fcfcfc;
+    border-radius: 10px;
+
+}
+
+.all-content .info{
+    margin: 20px;
+    background-color: chocolate;
+    color: white;
+    width: 30%;
+    padding: 10px;
+    box-shadow: -2px 0px 5px 4px #aaa;
+}
+.all-content .info li{
+    background-color: #fff;
+    color: black;
+    border-radius: 100px;
+    margin-bottom: 10px;
+    padding: 10px;
+    cursor: pointer;
+    user-select: none;
+    box-shadow: 0px 2px 5px 1px black;
+    transition: 0.5s;
+}
+.all-content .info li.selected{
+    transform: scale(1.07);
+    margin:20px 0 ;
+    border:3px solid green;
+}
+.all-content .info li:hover{
+    transform: scale(1.07);
+    margin:20px 0 ;
+    
+}
+
+.all-content .info .name{
+    font-size: 20px;
+}
+.all-content .info .email{
+    font-size: 18px;
+}
+.all-content .content{
+    background-color: bisque;
+    padding: 10px;
+    margin: 20px;
+    width: 70%;
+}
+.all-content .data{
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: white;
+    border-radius: 5px;
+}
+.all-content .data h3{
+    font-size: 20px;
+    margin-bottom: 10px;
+    position: relative;
+}
+.all-content .data h3::after{
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 80%;
+    height: 2px;
+    background-color: #333;
+}
+.all-content .data p{
+    line-height: 1.4;
+    color: #777;
+    margin-top: 20px;
+}
